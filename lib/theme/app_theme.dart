@@ -1,4 +1,6 @@
 
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 class AppTheme {
@@ -16,9 +18,22 @@ class AppTheme {
 
           textButtonTheme: TextButtonThemeData(
             style: TextButton.styleFrom(primary: primary)
-            )
+            ),
 
-        );
+          //FloatingActionButtons
+          floatingActionButtonTheme: const FloatingActionButtonThemeData(
+            backgroundColor: primary,
+            elevation: 5
+          ),
+          //ElevatedButtons
+          elevatedButtonTheme: ElevatedButtonThemeData(
+            style: ElevatedButton.styleFrom(
+              primary: Colors.indigo,
+              shape: const StadiumBorder(),
+              elevation: 0
+            ),
+          )
+  );
 
     static final ThemeData darkTheme = ThemeData.dark().copyWith(
           //color primario
