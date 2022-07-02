@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:fl_components/models/models.dart';
 import 'package:fl_components/screens/screens.dart';
@@ -11,11 +10,12 @@ class AppRoutes{
   static final menuOptions = <MenuOption> [
     //TODO: borrar home
     //MenuOption(route: 'home', name: 'Home Screen', screen: const HomeScreen(), icon: Icons.home_max_sharp),
-    MenuOption(route: 'listview1', name: 'List View', screen: const Listview1Screen(), icon: Icons.list_alt),
+    MenuOption(route: 'listview1', name: 'Vista de listas', screen: const Listview1Screen(), icon: Icons.list_alt),
     MenuOption(route: 'alert', name: 'Alertas', screen: const AlertScreen(), icon: Icons.add_alert_outlined),
     MenuOption(route: 'card', name: 'Tarjetas', screen: const CardScreen(), icon: Icons.credit_card),
-    MenuOption(route: 'avatar', name: 'Circle Avatar', screen: const AvatarScreen(), icon: Icons.supervised_user_circle_outlined),
-    MenuOption(route: 'animated', name: 'Animated Container', screen: const AnimatedScreen(), icon: Icons.play_circle_outline_outlined),
+    MenuOption(route: 'avatar', name: 'Avatar Circular', screen: const AvatarScreen(), icon: Icons.supervised_user_circle_outlined),
+    MenuOption(route: 'animated', name: 'Animaciones', screen: const AnimatedScreen(), icon: Icons.play_circle_outline_outlined),
+    MenuOption(route: 'inputs', name: 'Pantalla de Inputs', screen: const InputsScreen(), icon: Icons.input_rounded),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
