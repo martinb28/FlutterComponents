@@ -16,6 +16,8 @@ class AppRoutes{
     MenuOption(route: 'avatar', name: 'Avatar Circular', screen: const AvatarScreen(), icon: Icons.supervised_user_circle_outlined),
     MenuOption(route: 'animated', name: 'Animaciones', screen: const AnimatedScreen(), icon: Icons.play_circle_outline_outlined),
     MenuOption(route: 'inputs', name: 'Pantalla de Inputs', screen: const InputsScreen(), icon: Icons.input_rounded),
+    MenuOption(route: 'slider', name: 'Sliders and checks', screen: const SliderScreen(), icon: Icons.slideshow_rounded),
+    MenuOption(route: 'listviewbuilder', name: 'Infinite Scroll & Pull to refresh', screen: const ListViewBuilderScreen(), icon: Icons.build_circle_outlined),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
